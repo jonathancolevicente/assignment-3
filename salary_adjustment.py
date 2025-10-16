@@ -1,19 +1,9 @@
 def main():
-    salary_adjustment()
+    print("employee Salary Adjustment System")
+    print()
 
-def salary()
-    salary = input("Enter your current salary: ")
-
-def salary_adjustment():
-    try:
-        salary = float(salary)
-        if salary < 0:
-            print("Salary cannot be negative.")
-            return
-    except ValueError:
-        print("Invalid input. Please enter a numeric value for salary.")
-        return
-
+    salary = get_salary()
+    
     if salary <= 40000:
         adjustment = 0.15
     elif salary <= 80000:
@@ -31,5 +21,18 @@ def salary_adjustment():
     print("Adjustment Percentage:", adjustment * 100, "%")
     print("Increase Amount: $", increase_amount)
     print("New Salary: $", new_salary)
+
+def get_salary():
+    while True:
+        try:
+            salary_input = input("Enter current salary ($): ")
+            salary = float(salary_input)
+            if salary < 0:
+                print("Salary cannot be negative.")
+            else:
+                return salary   
+        except ValueError:
+            print("Invalid input. Please enter a numeric value for salary.")
+    
 
 main()
