@@ -1,4 +1,8 @@
 Business Python Exceptions
+
+Disclaimer
+Note: Almost all coding for these exercises was completed in local files and then uploaded to GitHub in bulk. Due to issues with actively committing changes, the commit history may not reflect the incremental development process.
+
 Python exercises focused on exception handling and input validation for business applications.
 Overview
 This repository contains five Python programs that demonstrate proper exception handling techniques in real-world business scenarios. Each program uses try-except blocks, input validation loops, and defensive programming practices.
