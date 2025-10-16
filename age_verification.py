@@ -1,9 +1,7 @@
 def main():
     print("Customer Age Verification System")
     print()
-    
-    # min_age = 18
-    
+        
     try:
         customer_age = get_customer_age()
         
@@ -14,7 +12,6 @@ def main():
             print("Customer is not eligible for the promotion.")
     except NameError:
         print("Error: Minimum age variable not defined.")
-
 
 def get_customer_age():
     while True:
